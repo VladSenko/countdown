@@ -1,0 +1,19 @@
+{
+  "events": [
+    {
+      "title": "Interview",
+      "date": "2021-02-20T13:45:18.000Z",
+      "id": "8yv7rve-efjf33f-1234567"
+    },
+    {
+      "title": "Daily standup",
+      "date": "2021-02-20T11:00:18.000Z",
+      "id": "yttyddg-efjf33f-1234567"
+    },
+    {
+      "title": "Footbal game",
+      "date": "2021-02-22T18:45:18.000Z",
+      "id": "8yv7rve-o9o80u5-1234567"
+    }
+  ]
+}
