@@ -1,12 +1,30 @@
 import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import EventList from "./EventList";
+import EventForm from "./EventForm";
 
-export default function App() {
+
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View>
-      <EventList />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Events list"
+          component={EventList}
+          options={{ title: 'Your events' }}
+        />
+        <Stack.Screen
+          name="Event form"
+          component={EventForm}
+          options={{ title: 'Event form' }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
+
+export default App;

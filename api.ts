@@ -1,6 +1,6 @@
 import moment from "moment";
 
-export function formatDate(dateString: string) {
+export function formatDateTime(dateString: string) {
   const parsed = moment(new Date(dateString));
 
   if (!parsed.isValid()) {
